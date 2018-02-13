@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f30f9a68-eb21-4443-b929-5f6b0825ca6e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/text_shout.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180211200249_create_text_shouts.rb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180211200425_make_shouts_polymorphic.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180213015957_add_null_false_to_shouts.rb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/shouts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/shouts_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/models/shout.rb" afterPath="$PROJECT_DIR$/app/models/shout.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboards/show.html.erb" afterPath="$PROJECT_DIR$/app/views/dashboards/show.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/shouts/_shout.html.erb" afterPath="$PROJECT_DIR$/app/views/shouts/_shout.html.erb" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path=".idea/" />
@@ -193,7 +188,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="text_shout.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="text_shout.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/text_shout.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
@@ -267,7 +262,27 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20180213015957_add_null_false_to_shouts.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20180213015957_add_null_false_to_shouts.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -296,7 +311,6 @@
         <option value="$PROJECT_DIR$/app/controllers/dashboards_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shouts/show.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/db/migrate/20180211200249_create_text_shouts.rb" />
@@ -306,6 +320,8 @@
         <option value="$PROJECT_DIR$/app/controllers/shouts_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/shout.rb" />
         <option value="$PROJECT_DIR$/app/models/text_shout.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20180213015957_add_null_false_to_shouts.rb" />
       </list>
     </option>
   </component>
@@ -525,11 +541,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517630337338</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor app and shouts to be polymorphic">
+      <created>1518382371384</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518382371384</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11608000" />
+    <option name="totallyTimeSpent" value="12816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1401" height="877" extended-state="6" />
@@ -613,7 +636,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redirect to dashboard when signed in" />
     <MESSAGE value="Create ability for users to shout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create ability for users to shout" />
+    <MESSAGE value="Refactor app and shouts to be polymorphic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor app and shouts to be polymorphic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -622,22 +646,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/shouts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shouts/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -912,14 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20180211200249_create_text_shouts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1010,6 +1010,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180213015957_add_null_false_to_shouts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
